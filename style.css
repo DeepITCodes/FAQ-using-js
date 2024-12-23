@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: "Work Sans", serif;
+    box-sizing: border-box;
+    background-color: hsl(275, 100%, 97%);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: relative;
+    top: -138px;
+    width: 550px;
+    height: 350px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
+}
+.faqHead {
+    display: flex;
+}
+.star {
+    margin-top: 27px;
+    margin-right: 20px;
+    height: 26px;
+}
+.faq-item {
+    margin-top: 25px;
+}
+h1 {
+    color: hsl(292, 42%, 14%);
+    font-weight: 700;
+}
+.question {
+    margin-top: 10px;
+    color: hsl(292, 42%, 14%);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.question:hover {
+    color: hsl(292, 61%, 34%);;
+}
+.answer {
+    display: none;
+    margin-top: 10px;
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+    font-size: 16px;
+}
+.toggle-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.toggle-btn .icon {
+    width: 20px;
+    height: 20px;
+}
+  
+@media screen and (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%; /* Make it responsive to fit the screen */
+        height: auto; /* Adjust the height for better adaptability */
+        top: -100px; /* Adjust the position if needed */
+        padding: 15px; /* Reduce padding for smaller screens */
+        border-radius: 8px; /* Slightly smaller border radius */
+        box-shadow: 0 1px 3px rgba(32, 32, 32, 0.3); /* Soften the shadow */
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
